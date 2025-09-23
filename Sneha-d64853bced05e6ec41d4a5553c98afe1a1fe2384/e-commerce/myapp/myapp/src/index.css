@@ -1,0 +1,49 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Apply to whole website */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;  /* Global font */
+}
+
+/* Body styling */
+body {
+  background-color: #f5f7fa;  /* Light grayish background */
+  color: #222;                /* Dark text for readability */
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #111;
+}
+
+/* Paragraphs */
+p {
+  font-weight: 400;
+  color: #333;
+}
+
+/* Buttons */
+button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button hover */
+button:hover {
+  background-color: #111;
+  color: white;
+}
+
+
