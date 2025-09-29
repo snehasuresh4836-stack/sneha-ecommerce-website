@@ -8,11 +8,13 @@ import  './App.css'
 import Home from './components/Home'
 import Cart from './components/Cart'
 import Payment from './components/Payment'
-import AdminNavbar from './components/AdminNavbar'
+
 import AddProduct from './components/AddProduct'
 import ViewProduct from './components/ViewProduct'
 import ViewOrder from './components/ViewOrder'
 import ViewUser from './components/ViewUser'
+import UpdateProduct from './components/UpdateProduct'
+
 
 const App = () => {
   return (
@@ -28,9 +30,9 @@ const App = () => {
         <Route path="/Payment" element={<Payment/>}/>
         <Route path="/addproduct" element={<AddProduct/>}/>
         <Route path="/viewproduct" element={<ViewProduct/>}/>
-        <Route path="/admin" element={<AdminNavbar/>}/>
          <Route path="/vieworder" element={<ViewOrder/>}/>
          <Route path="/viewuser" element={< ViewUser/>}/>
+          <Route path="/updateproduct" element={<UpdateProduct/>}/>
 
         
        

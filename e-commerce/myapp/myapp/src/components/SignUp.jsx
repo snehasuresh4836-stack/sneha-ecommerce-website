@@ -43,7 +43,7 @@ const SignUp = () => {
       <TextField label='Email' variant='outlined'name='Email' value={enter.Email} onChange={inputhandler}/> <br /><br />
       <TextField label='Password' variant='outlined'name='Password' value={enter.Password} onChange={inputhandler}/> <br /><br />
       <br /><br />
-    
+          <Button variant='outlined'onClick={addHandler}>ENTER</Button> <br /><br />
       <Link to="/home">
        <Button variant='outlined'><LoginIcon/></Button> 
        </Link><br /><br/>

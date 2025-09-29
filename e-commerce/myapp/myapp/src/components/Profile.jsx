@@ -13,6 +13,7 @@ import NavBar from "./NavBar";
 
 
 const Profile = ({ onSignOut }) => {
+  const user = JSON.parse(localStorage.getItem('user'));
   const token = localStorage.getItem("token")
   console.log("Token in Profile:", token)
 
@@ -41,18 +42,18 @@ const Profile = ({ onSignOut }) => {
         
         <Box sx={{ display: "flex", alignItems: "center", mb: 3 }}>
           <Avatar
-            alt={ token?.name || "User"}
+            alt={user?.name || "User"}
             src={""}
             sx={{ width: 80, height: 80, mr: 2, bgcolor: "#febd69", fontSize: 30 }}
           >
-            {token?.name ? token.name[0].toUpperCase() : "U"}
+            {user?.name ? user.name[0].toUpperCase() : "U"}
           </Avatar>
           <Box>
             <Typography variant="h5" sx={{ fontWeight: "bold" }}>
-              
+              {user?.name || "Guest User"}
             </Typography>
             <Typography variant="body1" color="text.secondary">
-              {token?.email || "guest@example.com"}
+              {user?.email || "guest@example.com"}
             </Typography>
           </Box>
         </Box>
@@ -75,10 +76,10 @@ const Profile = ({ onSignOut }) => {
           <Grid item xs={12} sm={6}>
             <Paper sx={{ p: 2, bgcolor: "#fff8f0" }}>
               <Typography variant="subtitle1" fontWeight="bold">
-                Your Addresses
+                Your Address
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Edit or add addresses for orders
+                Edit or add address for orders
               </Typography>
             </Paper>
           </Grid>

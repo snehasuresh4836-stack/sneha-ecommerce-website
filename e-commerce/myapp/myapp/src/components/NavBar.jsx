@@ -48,18 +48,24 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 const NavBar = () => {
-  const useR = JSON.parse(localStorage.getItem('user'));
+  const user = JSON.parse(localStorage.getItem('user'));
   return (
     <AppBar position="static" sx={{ backgroundColor: "#131921" }}>
       <Toolbar>
-  
+  <Box sx={{ display:'flex', alignItems:"center"}}>
+  <img src="https://dslv9ilpbe7p1.cloudfront.net/aW7AXCKsfjzGip8aJdvb7w_store_banner_image.jpeg"
+       alt="logo"
+       style={{ width: 50,height:50, marginRight:8, borderRadius:"50%"
+       }}
+       />
+       </Box>
         <Typography
           variant="h6"
           noWrap
           component="div"
           sx={{ fontWeight: "bold", cursor: "pointer" }}
         >
-          JASS
+          
         </Typography>
 
        
@@ -78,7 +84,7 @@ const NavBar = () => {
           <Link to="/Payment">
           <Button color="inherit">PAYMENT</Button>
           </Link>
-          <Link to="/Profile">
+          <Link to="/profile">
           <IconButton color="inherit">
             <AccountCircleIcon />
           </IconButton>

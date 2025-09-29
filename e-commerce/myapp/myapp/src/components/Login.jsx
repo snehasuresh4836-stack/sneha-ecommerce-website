@@ -32,7 +32,7 @@ const Login = () => {
           }));
           
           if (res.data.userType === "admin") {
-            navigate("/admin");
+            navigate("/viewproduct");
           } else {
             navigate("/home");
           }

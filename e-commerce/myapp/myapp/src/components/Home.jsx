@@ -104,18 +104,30 @@ const buyHandler = (val) => {
 
                 <CardActions sx={{ display: "flex", gap: 1, p: 2 }}>
                   <Button
-                    variant="contained"
-                    color="primary"
-                    fullWidth
-                    onClick={() => addHandler(val)}
+                   variant="contained"
+  fullWidth
+  onClick={() => addHandler(val)}
+  sx={{
+    backgroundColor: "#f1c40f", // Yellow
+    color: "#000",             // Text color (black for contrast)
+    "&:hover": {
+      backgroundColor: "#d4ac0d" // Darker yellow on hover
+    }
+  }}
                   >
-                    Add to Cart
+                    AddtoCart
                   </Button>
                   <Button
-                    variant="contained"
-                    color="error"
-                    fullWidth
-                    onClick={() => buyHandler(val)}
+                     variant="contained"
+  fullWidth
+  onClick={() => buyHandler(val)}
+  sx={{
+    backgroundColor: "#27ae60", // Green
+    color: "#fff",              // White text
+    "&:hover": {
+      backgroundColor: "#1e8449" // Darker green on hover
+    }
+  }}
                   >
                     Buy Now
                   </Button>
