@@ -21,7 +21,8 @@ It includes frontend pages, JavaScript functionality, and JSON-based data.
 - HTML
 - CSS
 - JavaScript
-- JSON
+- React
+- Node.JS
 
 ## 🎯 Purpose
 
